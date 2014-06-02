@@ -5,14 +5,17 @@
 
 <posts:>
 	<!-- bug 1 @item is not aparently an item -->
-	<h4>{{ @item.id || @key || Object.keys(@item) }}</h4>
-	<view name="comments" for="{{ @key }}" />
+	<h4>{{ @item.id || @key }}</h4>
+	<p>{{ Object.keys(@item )}}</p>
+	<view name="comments" _item="{{ @key }}" />
 	<hr>
 <users:>
-	<h4>{{ @item.id || @key || Object.keys(@item) }}</h4>
-	<view name="comments" for="{{ @key }}" />
+	<h4>{{ @item.id || @key }}</h4>
+	<p>{{ Object.keys(@item )}}</p>
+	<view name="comments" _item="{{ @key }}" />
 	<hr>
 <docs:>
-	<h4>{{ @item.id || @key || Object.keys(@item) }}</h4>
-	<view name="comments" for="{{ @key }}" />
+	<h4>{{ @item.id || @key }}</h4>
+	<p>{{ Object.keys(@item )}}</p>
+	<view name="comments" _item="{{ @key }}" />
 	<hr>

@@ -20,7 +20,7 @@ expressApp
     format: ':port :remote-addr - - [:date] ":method :url HTTP/:http-version" :status :res[content-length] ":user-agent" - :response-time ms',
     stream: fs.createWriteStream('reqlog.txt', {flags:'a', encoding:'utf8', mode:0666})
   }))
-  .use(express.vhost('components.drb', derbyStarter.setup(require('./components')) ))
+  .use(express.vhost('sandbox.drb', derbyStarter.setup(require('./components')) ))
 
 server.listen(port, function() {
   console.log('%d listening. Go to: http://localhost:%d/', process.pid, port);
