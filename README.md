@@ -1,4 +1,6 @@
 ## Bug description
+pickup ./dump/posts, start the app
+
 see ./components/lib/item/index.coffee
 
 derby is able to trace model data on the server:
