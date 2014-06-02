@@ -1,0 +1,18 @@
+<index:>
+	<div class="Item">
+		<view name="{{ @item.collection }}" key="{{ @item.id }}" item="{{ @item }}" />
+	</div>
+
+<posts:>
+	<!-- bug 1 @item is not aparently an item -->
+	<h4>{{ @item.id || @key || Object.keys(@item) }}</h4>
+	<view name="comments" for="{{ @key }}" />
+	<hr>
+<users:>
+	<h4>{{ @item.id || @key || Object.keys(@item) }}</h4>
+	<view name="comments" for="{{ @key }}" />
+	<hr>
+<docs:>
+	<h4>{{ @item.id || @key || Object.keys(@item) }}</h4>
+	<view name="comments" for="{{ @key }}" />
+	<hr>

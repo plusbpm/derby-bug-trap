@@ -1,0 +1,8 @@
+<index:>
+	<div class="Lenta">
+		<h2>Lenta</h2>
+		<hr>
+		{{ each @dataprovider as #item }}
+			<view name="item" item="{{ #item }}" />
+		{{ / }}
+	</div>
