@@ -7,6 +7,7 @@ var derbyStarter = require('derby-starter/lib/server');
 var expressApp = express();
 var server = http.createServer(expressApp);
 
+process.env.MONGO_URL = "mongodb://localhost:27017/derby-bug-trap"
 var port = process.env.PORT || 4000;
 express.logger.token('port', function(req, res) { return port; });
 
