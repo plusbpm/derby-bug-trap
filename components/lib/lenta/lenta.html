@@ -2,7 +2,7 @@
 	<div class="Lenta">
 		<h2>Lenta</h2>
 		<hr>
-		{{ each @dataprovider as #item }}
+		{{ each #root._page.lenta as #item }}
 			<view name="item" item="{{ #item }}" />
 		{{ / }}
 	</div>

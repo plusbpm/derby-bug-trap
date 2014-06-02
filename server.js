@@ -1,3 +1,6 @@
+process.env.MONGO_URL = "mongodb://localhost:27017/derby-bug-trap"
+
+
 var http = require('http');
 var express = require('express');
 var fs = require('fs');
