@@ -1,2 +1,2 @@
 # Derby bugs examples
-## Please create separate branch for each testcase
+One branch for one bug. Keep the master clear.
