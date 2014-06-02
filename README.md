@@ -2,7 +2,7 @@
 
 npm install,  npm start
 
-host > 127.0.0.1	components.drb
+hosts > 127.0.0.1	components.drb
 
 browser > http://sandbox.drb:4000/
 
